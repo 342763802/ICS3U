@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class App {
+public class lesson2 {
 
     public static void main(String[] args) {
 
@@ -19,15 +19,13 @@ public class App {
 
         double discriminant = Math.pow(b, 2) - 4 * a * c;
 
-        double root1 = (-b + Math.sqrt(discriminant)) / 2 * a;
-        double root2 = (-b - Math.sqrt(discriminant)) / 2 * a;
-
-        if (Double.isNaN(root1)) {
+        if (discriminant < 0) {
             System.out.println("Your roots are not real");
         }
 
         else {
-            System.out.println("Your two roots are: " + root1 + " and " + root2);
+            System.out.println("Your two roots are: " + (-b + Math.sqrt(discriminant)) / 2 * a + " and "
+                    + (-b - Math.sqrt(discriminant)) / 2 * a);
         }
 
     }
