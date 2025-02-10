@@ -17,16 +17,16 @@ public class App {
 
         keyboard.close();
 
-        double discriminant = Math.pow(b,2)-4*a*c;
+        double discriminant = Math.pow(b, 2) - 4 * a * c;
 
-        double root1 = (-b+Math.sqrt(discriminant))/2*a;
-        double root2 = (-b-Math.sqrt(discriminant))/2*a;
+        double root1 = (-b + Math.sqrt(discriminant)) / 2 * a;
+        double root2 = (-b - Math.sqrt(discriminant)) / 2 * a;
 
-        if (Double.isNaN(root1)){
+        if (Double.isNaN(root1)) {
             System.out.println("Your roots are not real");
         }
-        
-        else{
+
+        else {
             System.out.println("Your two roots are: " + root1 + " and " + root2);
         }
 
