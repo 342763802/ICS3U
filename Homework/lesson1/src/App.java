@@ -8,12 +8,9 @@ public class App {
 
         System.out.println("\nInput a decimal: ");
 
-        int input = (int) keyboard.nextDouble();
+        System.out.println("Your input as an integer is: " + (int) keyboard.nextDouble());
 
         keyboard.close();
-
-        System.out.println("Your input as an integer is: " + input);
-
     }
 
 }
