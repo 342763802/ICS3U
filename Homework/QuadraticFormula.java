@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class lesson2 {
+public class QuadraticFormula {
 
     public static void main(String[] args) {
 
