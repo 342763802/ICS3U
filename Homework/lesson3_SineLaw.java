@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SineLaw {
+public class lesson3_SineLaw {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
 
@@ -22,7 +22,7 @@ public class SineLaw {
         if (angleA < 90) {
 
             // if side a is between side b and h
-            if (sideA > h && sideB < sideA) {
+            if (sideA > h && sideA > sideB) {
                 System.out.println("The two possible angles are: " + angleB + " and " + (180 - angleB));
             }
 
