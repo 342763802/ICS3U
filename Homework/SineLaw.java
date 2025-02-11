@@ -16,14 +16,14 @@ public class SineLaw {
         keyboard.close();
 
         double angleB = Math.toDegrees(Math.asin((Math.sin(Math.toRadians(angleA)) * sideB) / sideA));
-        double h = Math.toDegrees(sideB / Math.sin(Math.toRadians(angleA)));
+        double h = sideB * Math.sin(Math.toRadians(angleA));
 
         // if angle a is acute
         if (angleA < 90) {
 
             // if side a is between side b and h
-            if (sideA > h && sideB > sideA) {
-                System.out.println("The two possible angle Bs are: " + angleB + " " + (180 - angleB));
+            if (sideA > h && sideB < sideA) {
+                System.out.println("The two possible angles are: " + angleB + " and " + (180 - angleB));
             }
 
             // if side a is larger than side b
